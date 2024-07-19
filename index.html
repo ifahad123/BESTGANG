@@ -3,10 +3,17 @@
 <head>
 <title>The Ultimate Gang</title>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="160">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="z.ico">
 <style>
+
+  blockquote{
+    
+  border: 2px solid blue;
+  padding: 30px;
+
+  }
+
   footer {
   background-color: transparent;
   padding: 24px;
@@ -17,10 +24,6 @@
 table, th, td {
   border: 1px solid rgb(1, 1, 255);
   border-collapse: collapse;
-}
-h3 {
-    border: 2px solid rgb(105, 17, 213);
-    padding: 30px;
 }
 
 button {
@@ -71,6 +74,69 @@ th, td {
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Style the header */
+header {
+  background-color: purple;
+  padding: 30px;
+  text-align: center;
+ 
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: lightpink;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: darkviolet;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: purple;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
 </style>
 </head>
 <body>
@@ -97,22 +163,38 @@ th, td {
 <h4>You can download the picture by clicking on it</h4>
 <h1 style="font-family:verdana;">Introduction</h1>
 <blockquote style="font-size: large;">Our goal is to: <q>that to make the world best friend group by creating this website together with the group and make it the best friendship website also</q>.You can suggest and recommend any ideas for our website by contacting us at the second link,Its been crazy since we almost here for like 2 years fighting eachother for no reason,so this website is<q>made to reunite together</q>.so we can all be friends,Also special thanks to Zubaidah ideaabout creating the perfect group</blockquote>
-<h1 style="font-family:verdana;">Zubaidah</h1>
-<h3 style="font-family:courier;">Zubaidah is a 12 years old girl whos is the one the the funniest girl that i ever met and also the smartest girl by teaming with Sandra,Yaya,Tia,Malika and talya,also the true time killer girl and bring happiness all day</h3>
-<h1 style="font-family:verdana;">Sandra</h1>
-<h3 style="font-family:courier;">Sandra is a 9 year old girl who might be the only childhood cousin that i believe is like a best friend to me and also being Zubaidah and Tia best friend ever</h3>
-<h1 style="font-family:verdana;">Yahya</h1>
-<h3 style="font-family:courier;">Yahya is a 6 year old who watch skibidi toliet and broke his own record twice about farting into grandpa breating machine,All jokes aside tho,Hes Jude best friend who is zubaidah brother and might be the top ranked funniest and braviest kid i have ever seen</h3>
-<h1 style="font-family:verdana;">Tia</h1>
-<h3 style="font-family:courier;">Speaking of tia,Who is a 7 years old kinda anooying sister to me,still she is the best sister i have ever seen in my whole life,Also kown as sandra best friend</h3>
-<h1 style="font-family:verdana;">Malika</h1>
-<h3 STYLE="font-family:Courier;">Other than sandra being tia best friend and best cousin,We also have Malika,A 9 year old Brave girl,Despite being also strong,With one punch,SHe ccould kill you before Yahya fart at 160 kmh</h3>
-<h1 style="font-family:verdana;">Talya</h1>
-<h3 STYLE="font-family:Courier;">About her,She is Malika sister,A 7 years old girl,which is almost the same age and height,She is also quite unlike yahya and tia screaming in the backdoors for no reason </h3>
-<h1 style="font-family:verdana;">Adam</h1>
-<h3 STYLE="font-family:Courier;">Talking about Zubaidah,Adam is one of Zubaidah brothers,Adam is consederd a Da boy,he is also cool you know that lol???</h3>
-<h1 style="font-family:verdana;">Jude</h1>
-<h3 STYLE="font-family:Courier;">Jude is the other Zubaidah brother,Jude and Yahya are the biggest friends and somehow are the biggest rivals,dispite jude is only 1 years old ahead of yahya,Yahya still wins on every fight </h3>
+<header id="O">
+    <h3 style="font-family:verdana;">The Best Friendship Group</h2>
+  </header>
+  
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html#O" >Main page</a></li>
+        <br>
+        <br>
+        <li><a href="A.html#A">zubaidah</a></li>
+        <li><a href="B.html#B">Sandra</a></li>
+        <li><a href="C.html#C" >Tia</a></li>
+        <li><a href="D.html#D" >Yahya</a></li>
+        <li><a href="E.html#E" >Malika</a></li>
+        <li><a href="F.html#F" >Talya</a></li>
+        <li><a href="G.html#G" >Jude</a></li>
+        <li><a href="h.html#H" >Adam</a></li>
+      </ul>
+    </nav>
+    
+    <article>
+      <h1 style="font-family:courier;">press  one of the names for more info </h1> 
+      
+    </article>
+  </section>
+  
+  <footer>
+    <p>It might be lag and will update for mobile users</p>
+  </footer>
+  <BR>
+  <BR>
 <table  style="width:100%">
     <tr>
       <th style="width: 50%;">person</th>
